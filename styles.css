@@ -60,9 +60,23 @@ body {
 }
 
 .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--primary-blue);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-brand:hover {
+    opacity: 0.8;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
 }
 
 .nav-menu {
