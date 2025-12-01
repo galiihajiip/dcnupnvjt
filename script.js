@@ -366,5 +366,5 @@ window.addEventListener('load', () => {
 // CONSOLE MESSAGE
 // ===================================
 console.log('%c🚀 DCN UPNVJT - Gen AI Engineer Learning Path', 'font-size: 20px; font-weight: bold; color: #2563EB;');
-console.log('%cBagian dari Dicoding Community Builder Batch 2', 'font-size: 14px; color: #22C55E;');
+console.log('%cBagian dari Community Network Batch 2', 'font-size: 14px; color: #22C55E;');
 console.log('%cFollow us: @dcn.upnvjt', 'font-size: 12px; color: #64748B;');

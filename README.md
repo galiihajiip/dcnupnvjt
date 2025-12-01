@@ -85,7 +85,7 @@ Website ini siap di-deploy ke:
 
 ## 🎯 Bagian dari
 
-Dicoding Community Builder Batch 2
+Community Network Batch 2
 
 ---
 
