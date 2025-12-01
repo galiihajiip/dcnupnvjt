@@ -1,0 +1,14 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="500" fill="#EFF6FF"/>
+  
+  <!-- Circle Background -->
+  <circle cx="250" cy="250" r="200" fill="#DBEAFE"/>
+  
+  <!-- User Icon -->
+  <circle cx="250" cy="200" r="70" fill="#2563EB"/>
+  <path d="M 250 280 Q 150 280 120 350 L 120 400 Q 120 420 140 420 L 360 420 Q 380 420 380 400 L 380 350 Q 350 280 250 280 Z" fill="#2563EB"/>
+  
+  <!-- Text -->
+  <text x="250" y="470" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#64748B" text-anchor="middle">Galih Aji Pangestu</text>
+</svg>

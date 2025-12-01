@@ -1,43 +1,52 @@
-# Cara Menambahkan Foto Galih Aji Pangestu
+# Cara Mengganti Foto Galih Aji Pangestu
 
-## Langkah-langkah:
+## File Sudah Dibuat! Tinggal Replace Aja
 
-1. **Siapkan foto** Galih Aji Pangestu
-   - Format: JPG atau PNG
-   - Ukuran recommended: 500x500px (square/persegi)
-   - Pastikan foto berkualitas baik
+File `galih.jpg` sudah ada di folder project. Kamu tinggal **REPLACE** file tersebut dengan foto asli Galih.
 
-2. **Rename foto** menjadi: `galih.jpg`
+## Langkah Mudah:
 
-3. **Letakkan file foto** di folder yang sama dengan index.html
-   ```
-   dcn/
-   ├── index.html
-   ├── styles.css
-   ├── script.js
-   ├── galih.jpg  ← Taruh di sini
-   └── README.md
-   ```
+### 1. Siapkan Foto
+- Format: **JPG** atau **PNG**
+- Ukuran: **500x500px** (square/persegi)
+- Ukuran file: **< 500KB**
 
-4. **Commit dan push** ke GitHub:
-   ```bash
-   git add galih.jpg
-   git commit -m "Add Galih photo"
-   git push
-   ```
+### 2. Replace File
+- Hapus file `galih.jpg` yang ada
+- Copy foto asli Galih ke folder project
+- **Rename** foto menjadi: `galih.jpg`
 
-## Jika Belum Ada Foto
+### 3. Commit & Push
+```bash
+git add galih.jpg
+git commit -m "Update Galih photo"
+git push
+```
 
-Sementara akan muncul icon user default. Begitu foto sudah ditambahkan, foto akan otomatis muncul.
+## Lokasi File:
+```
+dcn/
+├── index.html
+├── styles.css
+├── script.js
+├── logo-dcn.svg
+├── galih.jpg  ← REPLACE FILE INI
+└── README.md
+```
 
-## Tips Foto yang Bagus
+## Tips Foto Profesional:
+✅ Background polos atau blur
+✅ Pencahayaan bagus (tidak gelap/silau)
+✅ Wajah terlihat jelas
+✅ Foto formal atau semi-formal
+✅ Compress dulu agar file < 500KB
 
-- Background polos atau profesional
-- Pencahayaan bagus
-- Wajah terlihat jelas
-- Foto formal/semi-formal
-- Ukuran file < 500KB untuk loading cepat
+## Alternatif: Pakai Placeholder SVG
+Kalau belum ada foto JPG, bisa pakai `galih-placeholder.svg` dulu dengan edit HTML:
+```html
+<img src="galih-placeholder.svg" alt="Galih Aji Pangestu">
+```
 
 ---
 
-Foto akan muncul di section "Community Builder" dengan border biru dan bentuk bulat.
+Foto akan muncul di section **Community Builder** dengan border biru dan bentuk bulat! 🎉
