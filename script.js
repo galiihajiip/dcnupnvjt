@@ -243,7 +243,7 @@ Object.keys(validationRules).forEach(fieldName => {
 });
 
 // Form submission
-registrationForm.addEventListener('submit', (e) => {
+registrationForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     let isValid = true;
@@ -260,21 +260,64 @@ registrationForm.addEventListener('submit', (e) => {
         }
     });
     
-    // If form is valid, show success modal
+    // If form is valid, submit to Google Sheets
     if (isValid) {
-        // Here you would normally send data to a server
-        console.log('Form data:', Object.fromEntries(formData));
+        // Show loading state
+        const submitBtn = registrationForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Mengirim...';
+        submitBtn.disabled = true;
         
-        // Show success modal
-        successModal.classList.add('active');
-        
-        // Reset form
-        registrationForm.reset();
-        
-        // Clear all errors
-        Object.keys(validationRules).forEach(fieldName => {
-            clearError(fieldName);
-        });
+        try {
+            // GANTI URL INI dengan Web App URL dari Google Apps Script
+            const GOOGLE_SCRIPT_URL = 'PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE';
+            
+            // Prepare data
+            const data = {
+                timestamp: new Date().toLocaleString('id-ID'),
+                nama: formData.get('nama'),
+                nim: formData.get('nim'),
+                prodi: formData.get('prodi'),
+                angkatan: formData.get('angkatan'),
+                email: formData.get('email'),
+                whatsapp: formData.get('whatsapp'),
+                instagram: formData.get('instagram'),
+                linkedin: formData.get('linkedin') || '-',
+                github: formData.get('github') || '-',
+                ketersediaan: formData.get('ketersediaan'),
+                motivasi: formData.get('motivasi'),
+                minat: formData.get('minat')
+            };
+            
+            // Send to Google Sheets
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+            
+            // Show success modal
+            successModal.classList.add('active');
+            
+            // Reset form
+            registrationForm.reset();
+            
+            // Clear all errors
+            Object.keys(validationRules).forEach(fieldName => {
+                clearError(fieldName);
+            });
+            
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Terjadi kesalahan saat mengirim data. Silakan coba lagi.');
+        } finally {
+            // Restore button
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
     } else {
         // Scroll to first error
         const firstError = document.querySelector('.form-group.error');
