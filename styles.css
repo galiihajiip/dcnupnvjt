@@ -578,6 +578,20 @@ section {
     background: var(--bg-light);
 }
 
+.google-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.google-form-container iframe {
+    border-radius: 8px;
+}
+
 .registration-form {
     max-width: 900px;
     margin: 0 auto;

@@ -4,9 +4,9 @@ Website landing page untuk Dicoding Community Network UPN "Veteran" Jawa Timur -
 
 ## 🚀 Fitur
 
-- **Modern & Futuristik**: Desain AI-themed dengan animasi neural network
+- **Modern & Futuristik**: Desain AI-themed dengan animasi neural network dan logo SVG
 - **Fully Responsive**: Mobile-first design yang optimal di semua device
-- **Form Pendaftaran Built-in**: Form pendaftaran contributor dengan validasi lengkap
+- **Google Form Integration**: Form pendaftaran contributor terintegrasi dengan Google Forms
 - **Smooth Animations**: Fade-in on scroll dan animasi interaktif
 - **FAQ Accordion**: Section FAQ dengan accordion interaktif
 - **Clean Code**: HTML, CSS, dan JavaScript yang rapi dan terstruktur
@@ -37,6 +37,19 @@ Website landing page untuk Dicoding Community Network UPN "Veteran" Jawa Timur -
 - Vanilla JavaScript
 - Font Awesome Icons
 - Google Fonts (Inter)
+
+## 📝 Setup Google Form
+
+1. Buat Google Form di https://forms.google.com/create
+2. Ikuti template pertanyaan di file `TEMPLATE_GOOGLE_FORM.md`
+3. Setelah selesai, klik **Send** → pilih tab **< >** (Embed)
+4. Copy link form yang muncul
+5. Buka file `index.html`, cari baris:
+   ```html
+   src="https://docs.google.com/forms/d/e/PASTE_YOUR_GOOGLE_FORM_ID_HERE/viewform?embedded=true"
+   ```
+6. Ganti dengan link Google Form kamu
+7. Data pendaftaran otomatis masuk ke Google Sheets!
 
 ## 📦 Deployment
 

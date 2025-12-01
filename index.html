@@ -217,78 +217,20 @@
                 <h2 class="section-title">Form Pendaftaran Contributor</h2>
                 <p class="section-subtitle">Isi dengan jujur dan lengkap. Data digunakan untuk kebutuhan internal komunitas.</p>
             </div>
-            <form class="registration-form fade-in-scroll" id="registrationForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap <span class="required">*</span></label>
-                        <input type="text" id="nama" name="nama" required>
-                        <span class="error-message" id="namaError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="nim">NIM <span class="required">*</span></label>
-                        <input type="text" id="nim" name="nim" required>
-                        <span class="error-message" id="nimError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="prodi">Program Studi <span class="required">*</span></label>
-                        <input type="text" id="prodi" name="prodi" required>
-                        <span class="error-message" id="prodiError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="angkatan">Angkatan <span class="required">*</span></label>
-                        <input type="text" id="angkatan" name="angkatan" required>
-                        <span class="error-message" id="angkatanError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Aktif <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="error-message" id="emailError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="whatsapp">Nomor WhatsApp <span class="required">*</span></label>
-                        <input type="tel" id="whatsapp" name="whatsapp" required>
-                        <span class="error-message" id="whatsappError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="instagram">Akun Instagram <span class="required">*</span></label>
-                        <input type="text" id="instagram" name="instagram" placeholder="@username" required>
-                        <span class="error-message" id="instagramError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="linkedin">LinkedIn</label>
-                        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
-                        <span class="error-message" id="linkedinError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="github">GitHub</label>
-                        <input type="text" id="github" name="github" placeholder="username">
-                        <span class="error-message" id="githubError"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="ketersediaan">Ketersediaan Waktu <span class="required">*</span></label>
-                        <select id="ketersediaan" name="ketersediaan" required>
-                            <option value="">Pilih ketersediaan waktu</option>
-                            <option value="weekday-pagi">Weekday Pagi (08.00-12.00)</option>
-                            <option value="weekday-siang">Weekday Siang (12.00-17.00)</option>
-                            <option value="weekday-malam">Weekday Malam (17.00-21.00)</option>
-                            <option value="weekend">Weekend (Sabtu/Minggu)</option>
-                            <option value="fleksibel">Fleksibel</option>
-                        </select>
-                        <span class="error-message" id="ketersediaanError"></span>
-                    </div>
-                </div>
-                <div class="form-group full-width">
-                    <label for="motivasi">Motivasi Bergabung <span class="required">*</span></label>
-                    <textarea id="motivasi" name="motivasi" rows="4" required></textarea>
-                    <span class="error-message" id="motivasiError"></span>
-                </div>
-                <div class="form-group full-width">
-                    <label for="minat">Minat Utama dalam Gen AI <span class="required">*</span></label>
-                    <textarea id="minat" name="minat" rows="4" required></textarea>
-                    <span class="error-message" id="minatError"></span>
-                </div>
-                <button type="submit" class="btn btn-primary btn-large">Daftar Sekarang</button>
-            </form>
+            <div class="google-form-container fade-in-scroll">
+                <!-- GANTI URL GOOGLE FORM DI BAWAH INI -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/PASTE_YOUR_GOOGLE_FORM_ID_HERE/viewform?embedded=true" 
+                    width="100%" 
+                    height="1800" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                    Loading…
+                </iframe>
+                <!-- Jika belum punya Google Form, buat dulu di https://forms.google.com -->
+                <!-- Panduan lengkap ada di file TEMPLATE_GOOGLE_FORM.md -->
+            </div>
         </div>
     </section>
 
